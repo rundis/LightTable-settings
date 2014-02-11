@@ -24,15 +24,17 @@
            "cmd-shift-b" [:add-browser-tab]
            "cmd-shift-i" [:instarepl]
            "cmd-shift-t" [:toggle-console]
-           "cmd-shift-c" [:show-add-connection]}
+           "cmd-shift-c" [:show-add-connection]
+           "ctrl-shift-f" [:claire-show]}
 
 
-     :editor {"alt-w" [:editor.watch.watch-selection]
+    :editor {"alt-w" [:editor.watch.watch-selection]
               "alt-shift-w" [:editor.watch.unwatch]
               "ctrl-k" [:editor.kill-line]
               "ctrl-d" [:editor.select-line
                         :editor.copy]
 
+              "ctrl-shift-d" [:editor.doc.toggle]
 
               "cmd-v" [:editor.paste]
               "cmd-c" [:editor.copy]
