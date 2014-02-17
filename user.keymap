@@ -24,6 +24,7 @@
            "cmd-shift-b" [:add-browser-tab]
            "cmd-shift-i" [:instarepl]
            "cmd-shift-t" [:toggle-console]
+           "cmd-shift-e" [:clear-console :clear-inline-results]
            "cmd-shift-c" [:show-add-connection]
            "ctrl-shift-f" [:claire-show]}
 
