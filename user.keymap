@@ -32,14 +32,20 @@
     :editor {"alt-w" [:editor.watch.watch-selection]
               "alt-shift-w" [:editor.watch.unwatch]
               "ctrl-k" [:editor.kill-line]
-              "ctrl-d" [:editor.select-line
-                        :editor.copy]
+              "ctrl-j" [:editor.jump-to-definition-at-cursor]
+              "ctrl-shift-j" [:editor.unjump]
 
               "ctrl-shift-d" [:editor.doc.toggle]
 
               "cmd-v" [:editor.paste]
               "cmd-c" [:editor.copy]
 
+              "cmd-d" [:editor.select-line
+                             :editor.copy
+                             :editor.selection.clear
+                             :editor.new-line-indent
+                             :editor.paste
+                             :smart-indent-selection]
 
               "cmd-shift-l" [:smart-indent-selection]
               "cmd-shift-," [:toggle-comment-selection]
