@@ -18,8 +18,10 @@
            "cmd-alt-right" [:tabset.next]
            "cmd-ctrl-right" [:tabs.move-next-tabset]
            "cmd-ctrl-left" [:tabs.move-prev-tabset]
+           "cmd-ctrl-n" [:tabset.new :tabs.move-next-tabset]
 
            "cmd-shift-w" [:workspace.show]
+           "cmd-shift-w-p" [:workspace.show-recents]
 
            "cmd-shift-b" [:add-browser-tab]
            "cmd-shift-i" [:instarepl]
@@ -28,8 +30,21 @@
            "cmd-shift-c" [:show-add-connection]
            "ctrl-shift-f" [:claire-show]}
 
+     :editor.keys.hinting.active {"tab" [:auto-complete]
+                             "enter" [:passthrough]}
 
-    :editor {"alt-w" [:editor.watch.watch-selection]
+     :editor {
+              "alt-[" [(:editor.open-pair "[")]
+              "alt-shift-[" [(:editor.open-pair "{")]
+              "alt-]" [(:editor.close-pair "]")]
+              "alt-shift-]" [(:editor.close-pair "}")]
+
+              "ctrl-z-i" [:window.zoom-in]
+              "ctrl-z-o" [:window.zoom-out]
+
+              "cmd+f" [:find.show]
+
+              "alt-w" [:editor.watch.watch-selection]
               "alt-shift-w" [:editor.watch.unwatch]
               "ctrl-k" [:editor.kill-line]
               "ctrl-j" [:editor.jump-to-definition-at-cursor]
@@ -41,13 +56,16 @@
               "cmd-c" [:editor.copy]
 
               "cmd-d" [:editor.select-line
-                             :editor.copy
-                             :editor.selection.clear
-                             :editor.new-line-indent
-                             :editor.paste
-                             :smart-indent-selection]
+                       :editor.copy
+                       :editor.selection.clear
+                       :editor.new-line-indent
+                       :editor.paste
+                       :smart-indent-selection]
 
-              "cmd-shift-l" [:smart-indent-selection]
+              "cmd-shift-l" [:editor.select-all
+                             :smart-indent-selection
+                             :editor.selection.clear]
+
               "cmd-shift-," [:toggle-comment-selection]
 
 
@@ -71,8 +89,6 @@
               ;;Slurp and Barf, with less ridiculous and more intuitive names
               "ctrl-alt-." [:paredit.grow.right]
               "ctrl-alt-," [:paredit.shrink.right]}
-
-
 
 
      }}

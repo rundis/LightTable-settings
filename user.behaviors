@@ -10,6 +10,7 @@
 ;; brackets (e.g. "theme").
 
 {:+ {
+
      ;; The app tag is kind of like global scope. You assign behaviors that affect
      ;; all of Light Table here
      :app [(:lt.objs.style/set-skin "dark")]
@@ -19,7 +20,10 @@
               (:lt.objs.style/set-theme "default")]
 
      ;; Here we can add behaviors to just clojure editors
-     :editor.clojure [(:lt.objs.langs.clj/print-length 1000)]}
+     :editor.clojure [(:lt.objs.langs.clj/print-length 1000)]
+
+     ;; Groovy editor specifics
+     :editor.groovy [(:lt.objs.editor/tab-settings true 4 4)]}
 
  ;; You can use the subtract key to remove behavior that may get added by
  ;; another diff
