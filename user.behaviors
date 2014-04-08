@@ -25,8 +25,10 @@
 
      ;; Groovy editor specifics
      :editor.groovy [(:lt.objs.editor/tab-settings true 4 4)
-                     (:lt.plugins.groovy/client-enable-logging)]}
+                     (:lt.plugins.groovy/client-enable-logging)]
 
+     :editor.javascript [:lt.plugins.jshint/on-save
+                         (:lt.plugins.jshint/jshint-options {:strict true})]}
 
  ;; You can use the subtract key to remove behavior that may get added by
  ;; another diff
