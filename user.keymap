@@ -91,4 +91,8 @@
               "ctrl-alt-," [:paredit.shrink.right]}
 
 
+
+     :editor.javascript { "ctrl-t ctrl-c" [(:snippet.by_key "buster_testcase")]
+                          "ctrl-t ctrl-t" [(:snippet.by_key "buster_test")]}
+
      }}

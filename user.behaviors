@@ -22,8 +22,11 @@
      ;; Here we can add behaviors to just clojure editors
      :editor.clojure [(:lt.objs.langs.clj/print-length 1000)]
 
+
      ;; Groovy editor specifics
-     :editor.groovy [(:lt.objs.editor/tab-settings true 4 4)]}
+     :editor.groovy [(:lt.objs.editor/tab-settings true 4 4)
+                     (:lt.plugins.groovy/client-enable-logging)]}
+
 
  ;; You can use the subtract key to remove behavior that may get added by
  ;; another diff
