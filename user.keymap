@@ -66,6 +66,8 @@
                              :smart-indent-selection
                              :editor.selection.clear]
 
+              "cmd-l" [:smart-indent-selection]
+
               "cmd-shift-," [:toggle-comment-selection]
 
 
@@ -88,11 +90,16 @@
 
               ;;Slurp and Barf, with less ridiculous and more intuitive names
               "ctrl-alt-." [:paredit.grow.right]
-              "ctrl-alt-," [:paredit.shrink.right]}
+              "ctrl-alt-," [:paredit.shrink.right]
+
+              ;; Snippets general
+              "ctrl-e" [:snippet.by_token]
+              "ctrl-f ctrl-n" [(:snippet.by_key "fn")]}
 
 
 
-     :editor.javascript { "ctrl-t ctrl-c" [(:snippet.by_key "buster_testcase")]
-                          "ctrl-t ctrl-t" [(:snippet.by_key "buster_test")]}
+
+     :editor.javascript { "ctrl-t ctrl-c" [(:snippet.by_key "tc")]
+                          "ctrl-t ctrl-t" [(:snippet.by_key "tt")]}
 
      }}
