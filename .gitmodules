@@ -1,3 +1,6 @@
 [submodule "snippets/buster"]
 	path = snippets/buster
 	url = git@github.com:rundis/lt-buster-snippets.git
+[submodule "snippets/lighttable"]
+	path = snippets/lighttable
+	url = git@github.com:rundis/lt-plugin-snippets.git
