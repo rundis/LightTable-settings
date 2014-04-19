@@ -4,3 +4,6 @@
 [submodule "snippets/lighttable"]
 	path = snippets/lighttable
 	url = git@github.com:rundis/lt-plugin-snippets.git
+[submodule "snippets/javascript"]
+	path = snippets/javascript
+	url = git@github.com:rundis/lt-javascript-snippets.git

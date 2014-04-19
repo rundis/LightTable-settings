@@ -1,0 +1,13 @@
+{:modes {:+ #{:editor.edn}}
+ :snippets [{:name "Snippet config"
+             :key "sc"
+             :snippet-file "snippet-config.snip"}
+            {:name "Snippet definition"
+             :key "sd"
+             :snippet-file "snippet-def.snip"}
+            ]}
+
+
+
+
+
