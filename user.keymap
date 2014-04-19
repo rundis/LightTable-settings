@@ -94,7 +94,11 @@
 
               ;; Snippets general
               "ctrl-e" [:snippet.by_token]
-              "ctrl-f ctrl-n" [(:snippet.by_key "fn")]}
+              "ctrl-s ctrl-s" [:snippet.select]
+
+
+
+              }
 
 
 
