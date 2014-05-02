@@ -104,7 +104,12 @@
 
 
 
-     :editor.javascript { "ctrl-t ctrl-c" [(:snippet.by_key "tc")]
-                          "ctrl-t ctrl-t" [(:snippet.by_key "tt")]}
+     :editor.javascript {"ctrl-b ctrl-d" [:buster-dashboard-toggle]
+                         "ctrl-b ctrl-a" [:toggle-autotest]
+                         "ctrl-b ctrl-t ctrl-a" [:lt.plugins.instabuster/test-all]
+                         "ctrl-t ctrl-c" [(:snippet.by_key "tc")]
+                         "ctrl-t ctrl-t" [(:snippet.by_key "tt")]}
+
+     :editor.buster {"ctrl-b ctrl-l" [:toggle-live]}
 
      }}
