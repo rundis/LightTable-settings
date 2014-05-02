@@ -24,7 +24,7 @@
 
 
      ;; Groovy editor specifics
-     :editor.groovy [(:lt.objs.editor/tab-settings true 4 4)
+     :editor.groovy [(:lt.objs.editor/tab-settings false 4 4)
                      (:lt.plugins.groovy/client-enable-logging)]
 
      :editor.javascript [:lt.plugins.jshint/on-save

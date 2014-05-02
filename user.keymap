@@ -73,6 +73,7 @@
 
               "alt-d" [:editor.page-down]
               "alt-u" [:editor.page-up]
+              "ctrl-left" [:editor.line-start-smart]
 
 
               ;; ********** PAREDIT ************
