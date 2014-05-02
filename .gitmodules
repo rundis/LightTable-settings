@@ -7,3 +7,6 @@
 [submodule "snippets/javascript"]
 	path = snippets/javascript
 	url = git@github.com:rundis/lt-javascript-snippets.git
+[submodule "snippets/groovy"]
+	path = snippets/groovy
+	url = git@github.com:rundis/lt-groovy-snippets.git
