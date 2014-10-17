@@ -35,4 +35,5 @@
  :- {:app [:lt.objs.intro/show-intro]
 
      ;; No more "Do you want to save.." on closing editor not backed by a file"
-     :editor.transient [:lt.objs.editor.file/dirty-on-change]}}
+     :editor.transient [:lt.objs.editor.file/dirty-on-change]}
+ }

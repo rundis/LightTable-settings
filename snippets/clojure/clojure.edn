@@ -1,0 +1,5 @@
+{:modes {:+ #{:editor.clojure :editor.clojurescript}}
+ :snippets [{:name "Clojure: Function"
+             :key "fun"
+             :snippet-file "defn.snip" }
+            ]}

@@ -55,12 +55,15 @@
               "cmd-v" [:editor.paste]
               "cmd-c" [:editor.copy]
 
-              "cmd-d" [:editor.select-line
-                       :editor.copy
-                       :editor.selection.clear
-                       :editor.new-line-indent
-                       :editor.paste
-                       :smart-indent-selection]
+              "cmd-d" [:editor.sublime.duplicateLine]
+
+              "ctrl-g" [:editor.sublime.selectNextOccurrence]
+              "ctrl-shift-up"     [:editor.sublime.selectLinesUpward]
+              "ctrl-shift-down"   [:editor.sublime.selectLinesDownward]
+              "ctrl-pmeta-up"     [:editor.sublime.swapLineUp]
+              "ctrl-pmeta-down"   [:editor.sublime.swapLineDown]
+              "shift-pmeta-space" [:editor.sublime.selectScope]
+              "ctrl-m"            [:editor.sublime.goToBracket]
 
               "cmd-shift-l" [:editor.select-all
                              :smart-indent-selection
@@ -112,4 +115,7 @@
 
      :editor.buster {"ctrl-b ctrl-l" [:toggle-live]}
 
+     }
+ :- {:app {}
+     :editor.keys.normal {"[" [(:editor.open-pair "[")]} ; I want my norwegian å back !
      }}
