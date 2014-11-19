@@ -1,0 +1,11 @@
+{:modes {:+ #{:editor.javascript}}
+ :helper "js2.js"
+ :snippets [{:name "Demo: console log"
+             :key "cl"
+             :snippet "console.log(${1:message});" }
+            {:name "Demo: function"
+             :key "fun"
+             :snippet-file "fun.snip"}
+            {:name "Demo: Get Set"
+             :key "gs"
+             :snippet-file "getSet.snip"}]}
