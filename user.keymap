@@ -80,7 +80,7 @@
 
 
               ;; ********** PAREDIT ************
-              "alt-enter" [(:paredit.select.parent "(")
+              "ctrl-alt-p" [(:paredit.select.parent "(")
                            :eval-editor-form
                            :paredit.select.clear]
 
@@ -95,6 +95,14 @@
               ;;Slurp and Barf, with less ridiculous and more intuitive names
               "ctrl-alt-." [:paredit.grow.right]
               "ctrl-alt-," [:paredit.shrink.right]
+              "ctrl-alt-l" [:paredit.grow.left]
+              "ctrl-alt-r" [:paredit.shrink.right]
+
+              "ctrl-alt-u" [:paredit.unwrap.parent]
+              "ctrl-alt-down" [:paredit.move.down.forward]
+              "ctrl-alt-up" [:paredit.move.up.backward]
+              "ctrl-alt-left" [:paredit.move.down.backward]
+              "ctrl-alt-right" [:paredit.move.up.forward]
 
               ;; Snippets general
               "ctrl-e" [:snippet.by_token]
